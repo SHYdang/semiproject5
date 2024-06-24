@@ -1,0 +1,340 @@
+        /* 폰트 */
+        /* @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Single+Day&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&family=Single+Day&display=swap'); */
+        /* R폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+        /* @font-face {
+            font-family: 'ONE-Mobile-POP';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        } */
+
+
+
+
+
+
+
+        * {
+            box-sizing: border-box;
+            border-radius: 10px;
+
+
+            /* 폰트 */
+            /* font-family: "Single Day", cursive;
+            font-weight: 400;
+            font-style: normal; */
+
+            /* font-family: "Jua", sans-serif;
+            font-weight: 400;
+            font-style: normal; */
+
+            /* 
+            font-family: 'ONE-Mobile-POP';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+            font-weight: normal;
+            font-style: normal; */
+
+            /* font-family: "Gowun Dodum", sans-serif;
+            font-weight: 700;
+            font-style: normal; */
+
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            /* 배경이미지 */
+            /* background: url(dog1.jpg) no-repeat center fixed;
+            background-size: cover; */
+
+            /* 강한색채 */
+            /* background: #fc00ff;
+            background: -webkit-linear-gradient(135deg, #00dbde, #fc00ff);
+            background: linear-gradient(135deg, #00dbde, #fc00ff); */
+            /* 움직임 */
+            /* background-size: 1000% 1000%;
+            animation: gradient 10s linear infinite; */
+            /* background-size: 800% 800%; */
+
+
+            /* 연한색채 */
+            /* background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%); */
+            /* background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%); */
+            /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+            /* background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%); */
+            /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+
+
+            /* background-color: red; */
+
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+                
+            }
+
+            50% {
+                background-position: 50% 50%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .header {
+            /* width:100%; */
+            width: 1900px;
+            height: 100px;
+        }
+
+        div {
+            /* border: 1px solid black; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        /* 컨테이너 */
+        .container {
+            width: 1500px;
+            /* height:2000px; */
+            /* height: 8000px; */
+            padding: 100px 0px;
+            /* background-color: white; */
+            
+
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .containerContent{
+            width: 1100px;
+            display: block;
+            box-shadow: 10px 10px 20px 0px black;
+
+            /* background-color: rgba(255, 255, 255, 0.3); */
+            background-color: rgba(255, 255, 255, 0.5);
+            /* background-color: rgba(255, 255, 255, 0.7); */
+        }
+
+        /* 게시판 */
+        #boardBox{
+            width: 1100px;
+            /* box-shadow: 10px 10px 20px 0px black; */
+            /* border: 1px solid gray; */
+
+            
+            /* display: block; */
+            /* margin-bottom: 100px; */
+            flex-direction: column;
+        }
+        #board{
+            flex-direction: column;
+        }
+
+
+        #boardHeader {
+            width: 900px;
+            /* height: 100px; */
+            font-size: 20px;
+            font-weight: bold;
+            justify-content: start;
+            display: block;
+        }
+
+        .boardHeaderPart {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0px;
+        }
+
+        .boardHeaderTop>div {
+            font-size: 10px;
+            margin: 10px;
+        }
+
+        .boardHeaderBottom {
+            font-size: 10px;
+        }
+
+        #boardWriter,
+        #replyWriter {
+            justify-content: flex-start;
+            font-size: 10px;
+        }
+        #boardWriterPhotoBox,
+        #replyWriterPhotoBox {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            margin-right: 10px;
+
+
+            /* background: url(dog1.jpg) no-repeat center fixed; */
+            /* background-image: url(dog1.jpg); */
+            /* background-size: cover; */
+            /* background-size: contain; */
+            /* background-size: 100% 100%; */
+            /* background-image: url(dog1.jpg); */
+            /* background-color: red; */
+            overflow: hidden;
+        }
+
+        #boardWriterPhoto,
+        #replyWriterPhoto {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #boardContent {
+            width: 900px;
+            font-size: 15px;
+            line-height: 50px;
+            letter-spacing: 2px;
+        }
+        
+        #boardClick span {
+            font-size: 400px;
+            margin: 20px;
+        }
+        #boardButtonLogo{
+            /* transform: rotate(180deg); */
+        }
+
+
+        #replyBox {
+            width: 1100px;
+            flex-direction: column;
+            justify-content: flex-start;
+            /* border: 1px solid gray; */
+            /* box-shadow: 10px 10px 20px 0px black; */
+
+            /* background-color: yellow; */
+
+
+
+
+            /* border: 10px solid deeppink; */
+            /* box-shadow: 10px 10px 100px 0px #00dbde; */
+            /* box-shadow: 10px 10px 100px 0px deeppink; */
+
+
+        }
+
+        .buttonBox {
+            width: 100%;
+            height: 100px;
+            
+        }
+
+
+        .button{
+            width: 100%;
+            height: 100px;
+    
+            background-color: transparent;
+            padding: 0px 0px;
+            border: none;
+
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: rgba(255, 255, 255, 0.3);
+            filter: invert(0.7);
+            transition-duration: 0.5s;
+        }
+        .button span{
+            font-size: 50px;
+            color: gainsboro;
+        }
+
+
+        .replyView{
+            display: block;
+        }
+        #replyWrite {
+            display: none;
+            width: 100%;
+            /* justify-content: space-between; */
+            /* justify-content: start; */
+
+            /* 여기는 ▽처리o */
+            /* flex-direction: column; */
+            justify-content: start;
+        }
+
+        #replyContentBox {
+            width: 80%;
+            padding: 50px 100px;
+            display: block;
+        }
+
+        #replyWriter {
+            justify-content: space-between;
+        }
+
+        #replyWriter span {
+            margin: 10px;
+        }
+
+        #replyDate {}
+
+        #replyNumber {}
+
+
+        /* 댓글버튼 */
+        #replyRegisterBox {
+            width: 20%;
+        }
+
+        #replyRegister {
+            width: 10%;
+            height: 70px;
+            
+            font-size: 30px;
+            font-family: "Fleur De Leah", cursive;
+            font-weight: 700;
+            font-style: normal;
+
+            cursor: pointer;
+            border: none;
+            box-shadow: 10px 10px 10px 0px gray;
+        }
+
+        #replyRegister:hover {
+            filter: invert(1);
+            transition-duration: 0.7s;
+        }
+        #replyList {
+            width: 100%;
+            /* height: 700px; */
+
+            display: block;
+
+            flex-direction: column-reverse;
+            justify-content: start;
+            align-items: start;
+
+        }
+        /* .replyList #replyContentBox{ */
+        #replyList #replyContentBox{
+            display: none;
+        }
