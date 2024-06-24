@@ -1,0 +1,6 @@
+브랜치 만들기 
+브랜치 comitt*push 
+master 병합
+세희님 master병합허용 (but 권한다허용된듯함)
+-master에 push하면 
+세희님한테 메시지가오면(권한허부)
