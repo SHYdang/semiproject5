@@ -19,6 +19,11 @@
             transition-duration: 0.3s;
         }
 
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
         .header{
             z-index: 1;
             padding: 0;
@@ -70,6 +75,10 @@
             border: none;
         }
 
+        #logo-header > img{
+            height: 100px;
+        }
+
         #header-all:hover{
             border-bottom: 3px solid rgb(3, 206, 3);
         }
@@ -87,7 +96,7 @@
     <header class="header">
         <div class="header-suround">
             <div class="header-post">
-                <a href="#" id="logo-header">로고</a>
+                <a href="#" id="logo-header"><img src="logo.png" alt=""></a>
                 <a href="#" id="header-all">모두 게시판</a>
                 <a href="#" id="header-worker">알바 게시판</a>
                 <a href="#" id="header-ceo">사장 게시판</a>
